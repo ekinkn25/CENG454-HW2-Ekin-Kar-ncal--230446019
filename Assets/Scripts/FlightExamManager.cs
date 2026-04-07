@@ -7,6 +7,8 @@ public class FlightExamManager : MonoBehaviour
     [SerializeField] private TMP_Text statusText;
     [SerializeField] private TMP_Text missionText;
 
+    [SerializeField] private AudioSource successAudioSource;
+
     // State Tracking
     private bool hasTakenOff = false;
     private bool threatCleared = false;
@@ -33,6 +35,7 @@ public class FlightExamManager : MonoBehaviour
         statusText.text = "Threat Cleared. Proceed to Landing.";
         statusText.color = Color.yellow;
         Debug.Log("Mission State: Danger Phase Cleared");
+        if (successAudioSource != null) successAudioSource.Play();
     }
 
     public void PlayerHitByMissile()
