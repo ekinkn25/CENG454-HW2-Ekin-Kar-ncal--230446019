@@ -43,4 +43,15 @@ public class FlightExamManager : MonoBehaviour
         statusText.text = "AIRCRAFT DESTROYED! MISSION FAILED.";
         statusText.color = Color.red;
     }
+
+    public void ConfirmTakeoff()
+    {
+        if (!hasTakenOff)
+        {
+            hasTakenOff = true;
+            statusText.text = "Airborne. Proceed to Danger Zone.";
+            statusText.color = Color.cyan;
+            Debug.Log("Mission State: Takeoff Confirmed");
+        }
+    }
 }
