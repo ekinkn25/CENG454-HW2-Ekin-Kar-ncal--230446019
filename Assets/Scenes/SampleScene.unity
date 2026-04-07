@@ -192,6 +192,25 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 985117860}
   m_SourcePrefab: {fileID: 100100000, guid: b934103562779a1459ecaaf2654e05ba, type: 3}
+--- !u!1 &705012694 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4574184484478626130, guid: b49b547db6fbef24ca422f8da4444bfa, type: 3}
+  m_PrefabInstance: {fileID: 7750643427625244100}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &705012699
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 705012694}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6929692fb883274590d3ed66d77f4fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DangerZoneController
+  examManager: {fileID: 1989374941}
+  missileDelay: 5
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -476,7 +495,7 @@ MonoBehaviour:
   pitchSpeed: 45
   yawSpeed: 45
   rollSpeed: 45
-  thrustSpeed: 5
+  thrustSpeed: 50
 --- !u!54 &985117858
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1439,10 +1458,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: DangerZone
       objectReference: {fileID: 0}
+    - target: {fileID: 4574184484478626130, guid: b49b547db6fbef24ca422f8da4444bfa, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4574184484478626130, guid: b49b547db6fbef24ca422f8da4444bfa, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 705012699}
   m_SourcePrefab: {fileID: 100100000, guid: b49b547db6fbef24ca422f8da4444bfa, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
