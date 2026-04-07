@@ -1191,6 +1191,8 @@ GameObject:
   - component: {fileID: 1671587231}
   - component: {fileID: 1671587230}
   - component: {fileID: 1671587229}
+  - component: {fileID: 1671587234}
+  - component: {fileID: 1671587233}
   m_Layer: 0
   m_Name: TakeoffArea
   m_TagString: TakeoffArea
@@ -1291,6 +1293,40 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1671587233
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1671587228}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f44581ba84e3d943bed677605efa589, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TakeoffAreaController
+  examManager: {fileID: 1989374941}
+--- !u!65 &1671587234
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1671587228}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 500, z: 1}
+  m_Center: {x: 0, y: 250, z: 0}
 --- !u!1 &1727364977
 GameObject:
   m_ObjectHideFlags: 0
@@ -1304,6 +1340,7 @@ GameObject:
   - component: {fileID: 1727364979}
   - component: {fileID: 1727364978}
   - component: {fileID: 1727364982}
+  - component: {fileID: 1727364983}
   m_Layer: 0
   m_Name: LandingArea
   m_TagString: LandingArea
@@ -1423,8 +1460,21 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 4, z: 1}
-  m_Center: {x: 0, y: 2, z: 0}
+  m_Size: {x: 1, y: 500, z: 1}
+  m_Center: {x: 0, y: 250, z: 0}
+--- !u!114 &1727364983
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1727364977}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78eeef62e8c819844bc23e3e2a9136bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LandingAreaController
+  examManager: {fileID: 1989374941}
 --- !u!1 &1989374940
 GameObject:
   m_ObjectHideFlags: 0
@@ -1484,7 +1534,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: 5dd6f875c91018249991f08f58189a48, type: 3}
+  m_Resource: {fileID: 8300000, guid: 08c1b5ee546795340a7c90ac2e95afe2, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
