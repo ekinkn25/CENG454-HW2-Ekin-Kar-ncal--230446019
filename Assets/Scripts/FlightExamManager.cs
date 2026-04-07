@@ -34,4 +34,10 @@ public class FlightExamManager : MonoBehaviour
         statusText.color = Color.yellow;
         Debug.Log("Mission State: Danger Phase Cleared");
     }
+
+    public void PlayerHitByMissile()
+    {
+        statusText.text = "AIRCRAFT DESTROYED! MISSION FAILED.";
+        statusText.color = Color.red;
+    }
 }
